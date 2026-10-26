@@ -10,7 +10,7 @@ def load_tickets():
     try:
         with open(FILENAME, "r") as file:
             return json.load(file)
-    except json.JSONDecodeError:
+    except json.JSONDecodeError:   # the specific error Python throws when a JSON file is corrupted or empty
         print("Error: File is corrupt. Starting afresh.")
 
 def save_tickets(tickets):

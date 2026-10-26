@@ -1,0 +1,7 @@
+venv/   
+
+__pycache__/
+*.pyc
+tickets.json
+.env    #prevents Git from ever uploading your secret key to GitHub, if API key is stored in .env file instead of exporting errtime
+
